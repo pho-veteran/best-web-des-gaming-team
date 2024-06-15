@@ -165,8 +165,10 @@ button {
     border-radius: 0 16px 16px 0;
     animation: showSidebar 0.5s;
     transform: translateX(-100%);
+    visibility: hidden;
 }
 .sidebar.active {
+    visibility: visible;
     transform: translateX(0);
 }
 @keyframes showSidebar {
