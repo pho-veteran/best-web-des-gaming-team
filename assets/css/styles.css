@@ -163,21 +163,13 @@ button {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
     padding: 24px;
     border-radius: 0 16px 16px 0;
-    animation: showSidebar 0.5s;
     transform: translateX(-100%);
     visibility: hidden;
+    transition: all ease 0.3s;
 }
 .sidebar.active {
     visibility: visible;
     transform: translateX(0);
-}
-@keyframes showSidebar {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
 }
 .sidebar__close {
     padding: 12px;
